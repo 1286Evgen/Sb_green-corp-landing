@@ -84,11 +84,11 @@ button {
     background-size: cover;
   }
 
-  .form__container {
+.form__container {
     width: 550px;
   }
 
-  .form {
+.form {
     background-color: #1D263A;
     color: #fff;
     padding-top: 115px; 
@@ -96,23 +96,24 @@ button {
     text-align: center;
   }
 
-  .form h1 {
+.form h1 {
     font-size: 48px;
   }
 
-  .form p {
+.form p {
     font-size: 18px;
     opacity: 0.65;
   }
 
-  .form {
+.form {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .form__group {
+.form__group {
     display: flex;
     flex-direction: column;
     text-align: left;
   }
+
