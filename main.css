@@ -111,4 +111,8 @@ button {
     align-items: center;
   }
 
-  
+  .form__group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
