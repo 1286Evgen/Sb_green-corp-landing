@@ -96,11 +96,19 @@ button {
     text-align: center;
   }
 
-  .form, h1 {
+  .form h1 {
     font-size: 48px;
   }
 
-  .form, p {
+  .form p {
     font-size: 18px;
     opacity: 0.65;
   }
+
+  .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
