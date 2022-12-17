@@ -117,3 +117,9 @@ button {
     text-align: left;
   }
 
+.form {
+    display: grid;
+    grid-gap: 20px;
+    margin-top: 60px;
+}
+
