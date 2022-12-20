@@ -6,6 +6,9 @@ body {
   }
    
 header {
+    position:sticky;
+    top:0;
+    background-color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
