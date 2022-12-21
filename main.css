@@ -40,8 +40,12 @@ button {
     border-radius: 15px;
     cursor: pointer;
     box-shadow: 0 50px 36px rgba(66, 189, 78, 22%);
-
   }
+
+.header__controls button {
+  height: 45px;
+  width: 100px;
+}
 
 .about {
     display: flex;
@@ -173,6 +177,7 @@ button {
     font-size: 18px;
     font-weight: 600;
     margin-top: 40px;
+    height: 60px;
 }
 
 select {
