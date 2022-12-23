@@ -94,7 +94,7 @@ button {
     opacity: 0.8;
   }
 
-.about button {
+  .about button {
     font-size: 18px;
     border-radius: 20px;
     padding: 20px 25px;
@@ -105,7 +105,7 @@ button {
     max-width: 550px;
   }
 
-.about {
+  .about {
     /* ... */
     background: url('img/back.png') no-repeat;
     background-position: center;
