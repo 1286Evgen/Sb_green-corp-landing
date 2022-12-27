@@ -310,3 +310,8 @@ footer h3 {
       flex-direction: column;
   }
 }
+
+.about {
+  flex-direction: column-reverse;
+  padding: 50px 10px;
+}
