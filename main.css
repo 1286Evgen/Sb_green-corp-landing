@@ -162,6 +162,18 @@ button {
   justify-content: center;
 }
 
+#solar-panel {
+  color:#ffb406;
+}
+
+#time_date {
+  color:#ad1714;
+}
+
+#chart-line {
+  color:#22a030;
+}
+
 .form__container {
   width: 550px;
 }
