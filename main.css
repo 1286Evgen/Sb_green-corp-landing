@@ -102,19 +102,16 @@ button {
   }
 
 .about__info {
+  flex-direction: column-reverse;
+  padding: 50px 10px;
   max-width: 550px;
   }
 
 .about {
-  /* ... */
   background: url('img/back.png') no-repeat;
   background-position: center;
   background-size: cover;
-  }
-.about {
-  flex-direction: column-reverse;
-  padding: 50px 10px;
-  }
+}
 
 .features {
   background-color: #ffffff;
@@ -234,6 +231,34 @@ button {
   color: #ff7039;
 }
 
+.promo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo__image {
+  width: 50%;
+  background-image: url("img/promo.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+}
+
+.promo__right {
+  background-color: #dd5f26;
+  padding:  20% 30%;
+}
+/*
+{
+  background-color: #fff;
+  padding: 30px 40px;
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 500;
+  border-radius: 25px;
+}
+*/
 .form__container {
   width: 550px;
 }
@@ -468,4 +493,3 @@ footer h3 {
     flex-direction: column;
   }
 }
-
