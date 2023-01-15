@@ -233,7 +233,7 @@ button {
 
 .promo {
   display: flex;
-  justify-content: space-between;
+  justify-content: center ;
 }
 
 .promo__image {
@@ -247,10 +247,10 @@ button {
 
 .promo__right {
   background-color: #dd5f26;
-  padding:  20% 30%;
+  padding: 25%; 
 }
-/*
-{
+
+.promo_card {
   background-color: #fff;
   padding: 30px 40px;
   font-size: 20px;
@@ -258,7 +258,26 @@ button {
   font-weight: 500;
   border-radius: 25px;
 }
-*/
+
+.promo_card p {
+  opacity: 0.8;
+}
+
+.promo_card button {
+  background-color: #107b1c;
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+  border-radius: 25px;
+}
+
+.promo_card button i {
+  font-size: 15px;
+  margin-left: 5px;
+}
+
 .form__container {
   width: 550px;
 }
@@ -475,6 +494,15 @@ footer h3 {
   .features__savings-box {
     margin-right: 0px;
     margin-bottom: 30px;
+  }
+
+  .promo {
+    flex-direction: column-reverse;
+  }
+
+  .promo__image {
+    height: 500px;
+    width: 100%;
   }
 
   .form {
