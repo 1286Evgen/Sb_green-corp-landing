@@ -145,6 +145,7 @@ button {
 .card p {
   font-size: 16px;
   opacity: 0.8;
+  line-height: 22px;
 }
 
 .card__logo {
@@ -172,10 +173,11 @@ button {
 }
 
 .features__border {
+  width: 100%;
   margin-top: 50px;
   margin-bottom: 50px;
   border: 1px solid;
-  color:#E6EAF4;
+  border-color:#E6EAF4;
 }
 
 .features__feedback {
@@ -198,16 +200,17 @@ button {
 
 .features__feedback-right {
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 
 .features__box {
   padding-top: 30px;
+  padding-right: 40px;
   padding-bottom: 25px;
   padding-left: 40px; 
-  padding-right: 40px;
   color: rgb(255, 255, 255);
   border-radius: 25px;
+  height: 180px;
 }
 
 .features__box h3 {
@@ -233,30 +236,38 @@ button {
 
 .promo {
   display: flex;
-  justify-content: center ;
 }
 
 .promo__image {
-  width: 50%;
   background-image: url("img/promo.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+  width: 50%;
   flex-shrink: 0;
+  background-size: cover;
+  background-position: center;
 }
 
 .promo__right {
   background-color: #dd5f26;
-  padding: 25%; 
+  padding: 160px 60px; 
 }
 
 .promo_card {
-  background-color: #fff;
+  background-color: white;
   padding: 30px 40px;
-  font-size: 20px;
-  line-height: 22px;
-  font-weight: 500;
   border-radius: 25px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.promo__card p::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ec6b29;
+  margin-right: 10px;
 }
 
 .promo_card p {
@@ -266,11 +277,15 @@ button {
 .promo_card button {
   background-color: #107b1c;
   margin-top: 20px;
-  padding: 15px 30px;
-  font-size: 18px;
-  line-height: 22px;
   font-weight: 600;
-  border-radius: 25px;
+  font-size: 18px;
+  box-shadow: 0 16px 36px rgb(16 122 28 / 30%);
+  padding: 15px 30px;
+}
+
+.promo__button-wrap {
+  display: flex;
+  justify-content: center;
 }
 
 .promo_card button i {
@@ -485,6 +500,7 @@ footer h3 {
 
   .features__feedback-right {
     flex-direction: column;
+    align-items: initial;
   }
 
   .features__box h3 {
@@ -498,6 +514,10 @@ footer h3 {
 
   .promo {
     flex-direction: column-reverse;
+  }
+
+  .promo__right {
+    padding: 50px 10px;
   }
 
   .promo__image {
