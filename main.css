@@ -53,7 +53,15 @@ button {
   align-items: center;
   padding-top: 115px; 
   padding-bottom: 115px;
+  position: relative;
   }
+
+.orb-canvas {
+  position:absolute; 
+  right:0; 
+  top:0; 
+  height:100%;
+}
 
 .about__image {
   width: 500px;
