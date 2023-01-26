@@ -20,18 +20,32 @@ function initIncreaseNumberAnimation() {
   }
 initIncreaseNumberAnimation();
 
-document.querySelector(#budget).addEventListener('change', function handleSelectChange(event) {
+document.querySelector('#budget').addEventListener('change', function handleSelectChange(event) {
   if (event.target.value === 'other') {
-    let formContainer = document.createElement('div');
-    formContainer.classList.add('form__group', 'form__other-input');
-    let input = document.createElement('input');
-    input.placeholder = 'Введите ваш вариант';
-    input.type = 'text';
-
+    const formContainer = document.createElement('div');
+    formContainer.classList.add('form__group');
+    formContainer.classList.add('form__other-input');
+ 
+    const input = document.createElement('input');
+    input.placeholder = "Введите ваш вариант";
+    input.type = "text";
+ 
     formContainer.appendChild(input);
+    document.querySelector('.form form').insertBefore(formContainer, document.querySelector('.form__submit')); 
   }
-
-  if (event.target.value !== 'other') {
-    // Удаляем ранее добавленное текстовое поле, если оно есть в DOM
+ 
+  let otherInput = document.querySelector('.form__other-input');
+  if (event.target.value !== 'other' && Boolean(otherInput)) {
+      document.querySelector('.form form').removeChild(otherInput); 
   }
 });
+
+function updateScroll() {
+  if(window.scrollY>0) {
+    document.querySelector(header).classList.add('header__scrolled');
+  }
+  else {
+    document.querySelector(header).classList.remove('header__scrolled');
+  }
+}
+window.addEventListener("scroll", updateScroll);

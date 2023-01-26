@@ -7,14 +7,22 @@ body {
    
 header {
   z-index:1;
-  position:sticky;
+  position:fixed;
+  left:0;
+  right:0;
   top:0;
-  background-color: #ffffff;
+  background: rgba(0, 0, 0, 0);
+  transition: 0.25s ease;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
   }
+
+.header__scrolled {
+  background-color:rgb(255, 255, 255);
+  box-shadow: 0 12px 34px -11px rgb(65 62 101 / 10%);
+}
    
 .header__logo {
   height: 30px;
@@ -51,7 +59,7 @@ button {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top: 115px; 
+  padding-top: 200px; 
   padding-bottom: 115px;
   position: relative;
   }
