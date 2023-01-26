@@ -47,6 +47,5 @@ function updateScroll() {
   else {
     document.querySelector(header).classList.remove('header__scrolled');
   }
-}
 
 window.addEventListener("scroll", updateScroll);
