@@ -19,3 +19,19 @@ function initIncreaseNumberAnimation() {
     increaseNumberAnimationStep(0, element, 5000);
   }
 initIncreaseNumberAnimation();
+
+document.querySelector(#budget).addEventListener('change', function handleSelectChange(event) {
+  if (event.target.value === 'other') {
+    let formContainer = document.createElement('div');
+    formContainer.classList.add('form__group', 'form__other-input');
+    let input = document.createElement('input');
+    input.placeholder = 'Введите ваш вариант';
+    input.type = 'text';
+
+    formContainer.appendChild(input);
+  }
+
+  if (event.target.value !== 'other') {
+    // Удаляем ранее добавленное текстовое поле, если оно есть в DOM
+  }
+});
