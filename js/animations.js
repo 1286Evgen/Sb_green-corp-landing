@@ -38,7 +38,7 @@ document.querySelector('#budget').addEventListener('change', function handleSele
   }
 });
 
-let animationInited = false;
+
 
 function updateScroll() {
   if(window.scrollY>0) {
